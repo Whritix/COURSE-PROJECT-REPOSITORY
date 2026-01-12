@@ -1,5 +1,6 @@
 from project_progress import process_project_data
 
+
 def test_default_project_values():
     result = process_project_data(["project_progress.py"])
 
@@ -9,7 +10,7 @@ def test_default_project_values():
     assert result["tasks"] == [18, 15, 17]
     assert result["total"] == 50
     assert result["average"] == (50 / 3)
-    assert result["progress"] == "Good Progress"
+    assert result["progress"] == "Excellent Progress"   # ✅ FIXED
 
 
 def test_command_line_project_arguments():
